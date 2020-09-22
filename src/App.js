@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
+import questionImage from './question_image.png'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="question-section">
+        <img src={questionImage} className="question-image" alt="logo" />
       </header>
+
+      <content className="answer-section">
+        <input type="text" className="answer-input" autofocus="1" placeholder="?" />
+        <input type="button" className="answer-button" value="avanzar" />
+      </content>
     </div>
   );
 }
