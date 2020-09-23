@@ -33,3 +33,9 @@
   padding: 10px;
   cursor: pointer;
 }
+
+.feedback-danger {
+  text-align: center;
+  background: #ffcccc;
+  padding: 20px;
+}
